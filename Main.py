@@ -9,11 +9,18 @@ if choice1 =="FIGHT":
 
   choice1a=input("Choose your weapon: GUN or BAT?")
   if choice1a=="GUN":
-    print("You run out of bullets. All you have left are your bare    hands. You are not strong enough. The zombies beat you.    YOU DIE.")
+    print("You run out of bullets. All you have left are your bare    hands.")
+    choice1c=input("Do you fight with your BARE HANDS or go HIDE?")
 
     
   if choice1a=="BAT":
-    print("Bam. They are all dead. Not only have you survived, but you have killed all the zombies, saving humanity. Well done,  hero.")
+    print("Bam, bam, BAM! Heh, bats are fun.")
+    choice1b=input("Do you hit the zombies in the HEAD or the STOMACH?")
+    if choice1b==("HEAD"):
+      print("Looks like someone forgot their zombie anatomy. They have no brains. You simply confuse them, but that doesn't stop them from killing you. Looks like their not the only ones without a brain. You die.")
+  #change the head option so it is the write option
+    if choice1b==("STOMACH"):
+      print("")
 
 elif choice1 =="HIDE":
   print("Wise choice, *cough* coward *cough*")
